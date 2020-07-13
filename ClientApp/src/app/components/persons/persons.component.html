@@ -1,0 +1,8 @@
+
+<app-add-person (addPerson)="addPerson($event)"></app-add-person>
+
+<app-person-display
+  *ngFor="let person of persons" 
+  [person]="person"
+  >
+</app-person-display>

@@ -1,0 +1,12 @@
+<form [formGroup]="form" autocomplete="off" novalidate>
+  <div class="form-group mb-3">
+    <input type="text" class="form-control" formControlName="firstName" placeholder="First Name" required>
+  </div>
+
+  <div class="form-group mb-3">
+    <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name" required>
+  </div>
+
+  <button #addButton class="btn btn-primary btn-block mb-4" (click)="onSubmit()"
+    [disabled]="!form.valid">Add</button>
+</form>
